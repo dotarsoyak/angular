@@ -7,7 +7,7 @@ import { Observable, catchError, filter, tap, throwError } from 'rxjs';
   providedIn: 'root'
 })
 export class ProductService {
-    productUrl:string='api/products/products.json';
+    productUrl:string='https://compasstaxi.mx/products.json';
     constructor(private http: HttpClient){}
   
     getProducts(): Observable<IProduct[]>{
